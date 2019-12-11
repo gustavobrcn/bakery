@@ -1,0 +1,12 @@
+body {
+    margin:0;
+    background-image: url('/images/bread.jpg');
+    font-family: Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+h1 {
+    font-size: 100pt;
+}
