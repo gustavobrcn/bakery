@@ -1,12 +1,72 @@
 body {
-    margin:0;
-    background-image: url('/images/bread.jpg');
-    font-family: Helvetica, sans-serif;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
+  background-image: url("/images/sugar_jar.jpg");
+  background-color: black;
+  background-size: cover;
+  margin: 0;
+  background-repeat: no-repeat center center fixed;
+  color: #D5A848;
+  background-attachment: fixed;
 }
 
-h1 {
-    font-size: 100pt;
+#title {
+  text-shadow: 3px 3px 3px black;
+  font-family: miama;
+  position: relative;
+  text-align: center;
+  display: none;
+  animation: appear 2s forwards;
 }
+#title h1 {
+  font-size: 120pt;
+}
+#title h3 {
+  font-size: 30pt;
+  margin: 0;
+  position: absolute;
+  top: 310px;
+  left: 340px;
+  text-align: center;
+}
+
+#small-title {
+  text-shadow: 3px 3px 3px black;
+  font-family: miama;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  right: 20px;
+  display: none;
+  animation: appear 2s forwards;
+}
+#small-title h1 {
+  margin: 0;
+  font-size: 50pt;
+}
+#small-title h3 {
+  text-shadow: 1.5px 1.5px 1.5px black;
+  position: absolute;
+  top: 125px;
+  right: 200px;
+  margin: 0;
+  font-size: 14.5pt;
+}
+
+.cookies {
+  background-color: white;
+  font-family: BonvenoCF;
+  font-weight: bold;
+  z-index: 1;
+  display: none;
+}
+
+/* ------------Animations------------ */
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

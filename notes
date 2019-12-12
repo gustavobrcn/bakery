@@ -1,0 +1,48 @@
+body {
+    background-image: url('/images/sugar_cubes.jpg');
+    background-color: black;
+    background-size: cover;
+    margin:0;
+    background-repeat: no-repeat;
+    color: #D5A848;
+    background-attachment: fixed;
+}
+
+#title {
+    text-shadow: 2px 2px 10px black;
+    font-family: miama;
+    font-size: large;
+    position: relative;
+    text-align: center;
+    display: none;
+    /* opacity: 0; */
+    animation: appear 2s forwards;
+}
+
+#title h1 {
+    font-size: 120pt;
+}
+
+#title h3 {
+    font-size: 30pt;
+    margin: 0;
+    position: absolute;
+    top: 310px;
+    left: 340px;
+    text-align: center;
+}
+
+.cookies {
+    background-color: white;
+    font-family: BonvenoCF;
+    font-weight: bold;
+    z-index: 1;
+    display: none;
+}
+
+
+/* ------------Animations------------ */
+@keyframes appear {
+    from {opacity: 0};
+    to {opacity: 1;}
+}
