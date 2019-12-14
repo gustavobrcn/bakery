@@ -1,5 +1,5 @@
 body {
-  background-image: url("/images/sugar_pile.jpg");
+  background-image: url("/images/background_images/sugar_pile.jpg");
   background-color: black;
   background-size: cover;
   margin: 0;
@@ -57,7 +57,6 @@ body {
   font-family: BonvenoCF;
   font-weight: bold;
   z-index: 1;
-  display: none;
 }
 
 /* ------------Animations------------ */
