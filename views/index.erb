@@ -1,15 +1,15 @@
 <div id='title'>
     <h1>Syntactic Sugar</h1> 
-    <h3>"God's Bakery"</h3>
+    <h3>"The Heavenly Bakery"</h3>
 </div>
 
 <div id='small-title'>
     <h1>Syntactic Sugar</h1> 
-    <h3>"God's Bakery"</h3>
+    <h3>"The Heavenly Bakery"</h3>
 </div>
         
-<h1 id='pastry-category'>Heavenly Cookies</h1>
-<div id='pastries'>
+<h1 class='pastry-category'>Heavenly Cookies</h1>
+<div id='pastries--cookies'>
     <div class='pastries__hover'>
         <div class='pastries__oatmeal'>
             <div class='pastries__image'>
@@ -43,3 +43,40 @@
         </div>
     </div>
 </div> 
+
+
+<h1 class='pastry-category'>Heavenly Muffins</h1>
+<div id='pastries--muffins'>
+    <div class='pastries__hover'>
+        <div class='pastries__banana'>
+            <div class='pastries__image'>
+                <img src="<%= @muffin1.image %>">
+            </div>
+            <h2><%= @muffin1.name %></h2>
+            <h3><%= @muffin1.price %></h3>
+            <p><%= @muffin1.description %></p>
+        </div>
+    </div>
+
+    <div class='pastries__hover'>
+        <div class='pastries__morning'> 
+            <div class='pastries__image'>
+                <img src="<%= @muffin2.image %>">
+            </div>
+            <h2><%= @muffin2.name %></h2>
+            <h3><%= @muffin2.price %></h3>
+            <p><%= @muffin2.description %></p>
+        </div>
+    </div>
+
+    <div class='pastries__hover'>
+        <div class='pastries__coffee'>
+            <div class='pastries__image'>
+                <img src="<%= @muffin3.image %>">
+            </div>
+            <h2><%= @muffin3.name %></h2>
+            <h3><%= @muffin3.price %></h3>
+            <p><%= @muffin3.description %></p>
+        </div>
+    </div>
+</div>

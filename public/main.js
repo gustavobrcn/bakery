@@ -1,8 +1,9 @@
 // ----------Variables----------
 let title = document.getElementById('title')
 let smallTitle = document.getElementById('small-title')
-let pastries = document.getElementById('pastries')
-let categories = document.getElementById('pastry-category')
+let cookies = document.getElementById('pastries--cookies')
+let muffins = document.getElementById('pastries--muffins')
+let categories = document.getElementsByClassName('pastry-category')
 
 // ----------Animation Functions----------
 const titleAppear = () => {
@@ -17,17 +18,27 @@ const smallTitleAppear = () => {
     smallTitle.style.display = 'block'
 }
 
-const pastriesAppear = () => {
-    pastries.style.display = 'grid'
+const cookiesAppear = () => {
+    cookies.style.display = 'grid'
+}
+
+const muffinsAppear = () => {
+    muffins.style.display = 'grid'
 }
 
 const categoriesAppear = () => {
-    categories.style.display = 'block'
+    for (category in categories) { 
+        categories[category].style.display = 'block'
+    } 
 }
+
+
 
 // ----------Timeout Functions----------
 setTimeout(titleAppear, 500)
 setTimeout(titleDisappear, 6000)
 setTimeout(smallTitleAppear, 6000)
-setTimeout(pastriesAppear, 6500)
+setTimeout(cookiesAppear, 6500)
+setTimeout(muffinsAppear, 6500)
 setTimeout(categoriesAppear, 6500)
+
