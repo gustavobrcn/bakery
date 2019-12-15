@@ -3,7 +3,7 @@ class Cookies
     attr_reader :price
     def initialize(name, description, image)
         @name = name
-        @price = '$1M'
+        @price = '$100,000'
         @description = nil
         @image = nil
         self.show_image(image)

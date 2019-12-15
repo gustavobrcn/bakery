@@ -1,16 +1,45 @@
 <div id='title'>
     <h1>Syntactic Sugar</h1> 
-    <h3>"Bakery of the Gods"</h3>
+    <h3>"God's Bakery"</h3>
 </div>
 
 <div id='small-title'>
     <h1>Syntactic Sugar</h1> 
-    <h3>"Bakery of the Gods"</h3>
+    <h3>"God's Bakery"</h3>
 </div>
         
-<div class='cookies'>
-    <img src="<%= @cookie1.image %>">
-    <h2><%= @cookie1.name %></h2>
-    <p><%= @cookie1.price %></p>
-    <p><%= @cookie1.description %></p>
+<h1 class='pastry-category'>Heavenly Cookies</h1>
+<div class='pastries'>
+    <div class='pastries__hover'>
+        <div class='pastries__oatmeal'>
+            <div class='pastries__image'>
+                <img src="<%= @cookie1.image %>">
+            </div>
+            <h2><%= @cookie1.name %></h2>
+            <h3><%= @cookie1.price %></h3>
+            <p><%= @cookie1.description %></p>
+        </div>
+    </div>
+
+    <div class='pastries__hover'>
+        <div class='pastries__chocolatechip'> 
+            <div class='pastries__image'>
+                <img src="<%= @cookie2.image %>">
+            </div>
+            <h2><%= @cookie2.name %></h2>
+            <h3><%= @cookie2.price %></h3>
+            <p><%= @cookie2.description %></p>
+        </div>
+    </div>
+
+    <div class='pastries__hover'>
+        <div class='pastries__macaroon'>
+            <div class='pastries__image'>
+                <img src="<%= @cookie3.image %>">
+            </div>
+            <h2><%= @cookie3.name %></h2>
+            <h3><%= @cookie3.price %></h3>
+            <p><%= @cookie3.description %></p>
+        </div>
+    </div>
 </div> 
