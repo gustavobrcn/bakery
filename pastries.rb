@@ -88,7 +88,7 @@ class Cakes
     attr_reader :price
     def initialize(name, description, image)
         @name = name
-        @price = '$200,000'
+        @price = '$500,000'
         @description = nil
         @image = nil
         self.show_image(image)
@@ -99,11 +99,11 @@ class Cakes
         @image = nil
         case image
         when 1
-            @image = '/images/muffins/muffin1.png'
+            @image = '/images/muffins/cake1.png'
         when 2
-            @image = '/images/muffins/muffin5.png'
+            @image = '/images/muffins/cake2.png'
         when 3
-            @image = '/images/muffins/muffin3.png'
+            @image = '/images/muffins/cake3.png'
         else
             @description = 'Invalid input'
         end
@@ -113,11 +113,11 @@ class Cakes
         @description = nil
         case description
         when 1
-            @description = 'Rich peanut butter balanced by sweet & mellow ripe bananas. Topped with walnuts & chocolate chips for added sweetness & crunch.'
+            @description = 'Three layers of strawberry chantilly cream and strawberry jam. Topped with a strawberry vanilla buttercream dyed light pink, and decorated with strawberries.'
         when 2
-            @description = 'A fruity, flavorful mix of apples, shredded carrots & raisins tumbled together & topped with crispy coconut.'
+            @description = 'Classic New York style cheesecake with notes of vanilla. Optionally topped with fresh berries.'
         when 3
-            @description = 'Sour cream cake layered with brown sugar & streusel. It’s sharable, but after the first bite, you may not feel so generous.'
+            @description = 'Three layers of malted white cake. Frosted and filled with a whipped milk chocolate ganache. Topped with malt balls.'
         else
             @description = 'Input valid number'
         end
