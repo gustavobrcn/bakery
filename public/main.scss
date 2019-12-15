@@ -25,7 +25,7 @@ body {
         margin: 0;
         position: absolute;
         top: 310px;
-        left: 350px;
+        left: 400px;
         text-align: center;
     }
 }
@@ -38,7 +38,7 @@ body {
     position: relative;
     text-align: center;
     top: -20px;
-    // display: none;
+    display: none;
     animation: appear 2s forwards;
     h1 {
         margin: 0;
@@ -55,26 +55,28 @@ body {
     }
 }
 
-.pastry-category {
+#pastry-category {
     text-shadow: 3px 3px 3px black;
     margin: 65px 0px -10px 0px;
     font-family: miama;
     font-size: 30pt;
     text-align: center;
     text-decoration: underline;
-
+    display: none;
+    animation: appear 2s forwards;
 }
 
-.pastries {
+#pastries {
     backdrop-filter: blur(10px) brightness(1);
     font-family: BonvenoCF;
     font-weight: bold;
     z-index: 1;
-    // display: none;
+    display: none;
     text-align: center;
-    display: grid;
+    // display: grid;
     grid-template: 100% / repeat(3, 33.3%);
     margin: 0;
+    animation: appear 2s forwards;
 
     h2 {
         text-shadow: 1.5px 1.5px 1.5px black,

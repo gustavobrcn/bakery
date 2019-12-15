@@ -25,7 +25,7 @@ body {
   margin: 0;
   position: absolute;
   top: 310px;
-  left: 350px;
+  left: 400px;
   text-align: center;
 }
 
@@ -37,6 +37,7 @@ body {
   position: relative;
   text-align: center;
   top: -20px;
+  display: none;
   animation: appear 2s forwards;
 }
 #small-title h1 {
@@ -53,60 +54,63 @@ body {
   /* display: none; */
 }
 
-.pastry-category {
+#pastry-category {
   text-shadow: 3px 3px 3px black;
   margin: 65px 0px -10px 0px;
   font-family: miama;
   font-size: 30pt;
   text-align: center;
   text-decoration: underline;
+  display: none;
+  animation: appear 2s forwards;
 }
 
-.pastries {
+#pastries {
   backdrop-filter: blur(10px) brightness(1);
   font-family: BonvenoCF;
   font-weight: bold;
   z-index: 1;
+  display: none;
   text-align: center;
-  display: grid;
   grid-template: 100%/repeat(3, 33.3%);
   margin: 0;
+  animation: appear 2s forwards;
 }
-.pastries h2 {
+#pastries h2 {
   text-shadow: 1.5px 1.5px 1.5px black, 1.5px 1.5px 1.5px black;
   margin: 0;
   font-size: 21pt;
 }
-.pastries h3 {
+#pastries h3 {
   text-shadow: 1.5px 1.5px 1.5px black, 1.5px 1.5px 1.5px black;
   margin: 5px 0px 5px 0px;
   font-size: 20pt;
 }
-.pastries p {
+#pastries p {
   text-shadow: 1.5px 1.5px 1.5px black, 1.5px 1.5px 1.5px black;
   stroke-width: 10px;
   margin: 0;
   padding: 0px 25px 10px 25px;
 }
-.pastries .pastries__image {
+#pastries .pastries__image {
   display: flex;
   justify-content: center;
 }
-.pastries .pastries__image img {
+#pastries .pastries__image img {
   height: 300px;
 }
-.pastries .pastries__hover :hover {
+#pastries .pastries__hover :hover {
   cursor: pointer;
   border: 4px solid;
   animation: appear 0.5s forwards;
 }
-.pastries .pastries__oatmeal :hover {
+#pastries .pastries__oatmeal :hover {
   border: 0px;
 }
-.pastries .pastries__chocolatechip :hover {
+#pastries .pastries__chocolatechip :hover {
   border: 0px;
 }
-.pastries .pastries__macaroon :hover {
+#pastries .pastries__macaroon :hover {
   border: 0px;
 }
 
