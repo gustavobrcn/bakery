@@ -4,7 +4,7 @@ class Cookies
     attr_reader :price
     def initialize(name, description, image)
         @name = name
-        @price = '$100,000'
+        @price = '$10,000'
         @description = nil
         @image = nil
         self.show_image(image)
@@ -46,7 +46,7 @@ class Muffins
     attr_reader :price
     def initialize(name, description, image)
         @name = name
-        @price = '$200,000'
+        @price = '$20,000'
         @description = nil
         @image = nil
         self.show_image(image)
@@ -99,11 +99,11 @@ class Cakes
         @image = nil
         case image
         when 1
-            @image = '/images/muffins/cake1.png'
+            @image = '/images/cakes/cake1.png'
         when 2
-            @image = '/images/muffins/cake2.png'
+            @image = '/images/cakes/cake4.png'
         when 3
-            @image = '/images/muffins/cake3.png'
+            @image = '/images/cakes/cake3.png'
         else
             @description = 'Invalid input'
         end
@@ -113,9 +113,9 @@ class Cakes
         @description = nil
         case description
         when 1
-            @description = 'Three layers of strawberry chantilly cream and strawberry jam. Topped with a strawberry vanilla buttercream dyed light pink, and decorated with strawberries.'
+            @description = 'Three layers of strawberry chantilly cream and jam. Topped with a strawberry vanilla buttercream, and decorated with strawberries.'
         when 2
-            @description = 'Classic New York style cheesecake with notes of vanilla. Optionally topped with fresh berries.'
+            @description = 'Our year-round Valentine’s Day cake. Three layers of white cake. Filled with raspberry jam. Frosted with a white chocolate buttercream.'
         when 3
             @description = 'Three layers of malted white cake. Frosted and filled with a whipped milk chocolate ganache. Topped with malt balls.'
         else

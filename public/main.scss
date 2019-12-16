@@ -1,5 +1,5 @@
 body {
-    background-image: url('/images/background_images/sugar_brown.jpg');
+    background-image: url('/images/background_images/sugar_pile.jpg');
     background-color: black;
     background-size: cover;
     margin:0;
@@ -9,6 +9,7 @@ body {
     // overflow: ;
 }
 
+// ----------Mian title----------
 #title {
     text-shadow: 3px 3px 3px black;
     font-family: miama;
@@ -30,6 +31,7 @@ body {
     }
 }
 
+// ----------Subtitle----------
 #small-title {
     backdrop-filter: blur(10px) brightness(1);
     margin: 0;
@@ -55,6 +57,7 @@ body {
     }
 }
 
+// ----------Heading for each section----------
 .pastry-category {
     text-shadow: 3px 3px 3px black;
     margin: 65px 0px -10px 0px;
@@ -66,6 +69,7 @@ body {
     animation: appear 2s forwards;
 }
 
+// ----------Cookies----------
 #pastries--cookies {
     backdrop-filter: blur(10px) brightness(1);
     font-family: BonvenoCF;
@@ -125,6 +129,7 @@ body {
 
 }
 
+// ----------Muffins----------
 #pastries--muffins {
     backdrop-filter: blur(10px) brightness(1);
     font-family: BonvenoCF;
@@ -162,7 +167,7 @@ body {
     display: flex;
         justify-content: center;
         img {
-            height: 325px;
+            height: 300px;
         }
     }
 
@@ -183,6 +188,74 @@ body {
     .pastries__coffee :hover {
         border: 0px;
     }
+}
+
+// ----------Cakes----------
+#pastries--cakes {
+    backdrop-filter: blur(10px) brightness(1);
+    font-family: BonvenoCF;
+    font-weight: bold;
+    z-index: 1;
+    display: none;
+    text-align: center;
+    // display: grid;
+    grid-template: 100% / repeat(3, 33.3%);
+    margin: 0;
+    animation: appear 2s forwards;
+
+    h2 {
+        text-shadow: 1.5px 1.5px 1.5px black,
+                     1.5px 1.5px 1.5px black;
+        margin: 0;
+        font-size: 21pt;
+    }
+
+    h3 {
+        text-shadow: 1.5px 1.5px 1.5px black,
+                     1.5px 1.5px 1.5px black;
+        margin: 5px 0px 5px 0px;
+        font-size: 20pt;
+    }
+
+    p {
+        text-shadow: 1.5px 1.5px 1.5px black,
+                     1.5px 1.5px 1.5px black;
+        stroke-width: 10px;
+        margin: 0;
+        padding: 0px 25px 10px 25px;
+    }
+    .pastries__image {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+        img {
+            height: 225px;
+        }
+    }
+
+    .pastries__hover :hover {
+        cursor: pointer;
+        border: 4px solid;
+        animation: appear 1s forwards;
+    }
+    .pastries__strawberry {
+        :hover{
+            border: 0px;
+        }
+    }
+    
+
+    .pastries__cheesecake {
+        :hover {
+            border: 0px;
+        }
+    }
+    .pastries__malted {
+        :hover {
+            border: 0px;
+        }
+    }
+    
 }
 
 /* ------------Animations------------ */
