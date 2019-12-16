@@ -1,9 +1,10 @@
 // ----------Variables----------
-let title = document.getElementById('title')
-let smallTitle = document.getElementById('small-title')
-let pastries = document.getElementsByClassName('pastries')
-let categories = document.getElementsByClassName('pastry-category')
-
+const title = document.getElementById('title')
+const smallTitle = document.getElementById('small-title')
+const pastries = document.getElementsByClassName('pastries')
+const categories = document.getElementsByClassName('pastry-category')
+let bgImages = ["/images/background_images/sugar_jar.jpg", "/images/background_images/sugar_strawberry.jpg", "/images/background_images/sugar_pile.jpg", "/images/background_images/sugar_whitejar.jpg", "/images/background_images/sugar_brown.jpg"]
+let bgImageCount = 0
 // ----------Animation Functions----------
 const titleAppear = () => {
     title.style.display = 'block'
@@ -31,6 +32,13 @@ const categoriesAppear = () => {
     } 
 }
 
+const changeBackground = () => {
+        document.body.style.backgroundImage = "url(" + bgImages[bgImageCount] + ")"
+        bgImageCount = bgImageCount + 1
+        if (bgImageCount == bgImages.length) {
+            bgImageCount = 0
+        }
+}
 
 
 // ----------Timeout Functions----------
@@ -39,4 +47,4 @@ setTimeout(titleDisappear, 6000)
 setTimeout(smallTitleAppear, 6000)
 setTimeout(pastriesAppear, 6500)
 setTimeout(categoriesAppear, 6500)
-
+setInterval(changeBackground, 10000)

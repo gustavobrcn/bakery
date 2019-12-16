@@ -1,12 +1,16 @@
 body {
-    background-image: url('/images/background_images/sugar_pile.jpg');
+    background-image: url('/images/background_images/sugar_brown.jpg');
     background-color: black;
     background-size: cover;
     margin:0;
     background-repeat: no-repeat center center fixed;
     color: #D5A848;
     background-attachment: fixed;
-    // overflow: ;
+    backface-visibility: hidden;
+    // animation: slideshow 25s ease-in-out infinite;
+    // animation-delay: 15s;
+    // animation-timing-function: ease-in-out;
+    // animation: name duration timing-function delay iteration-count direction fill-mode;
 }
 
 // ----------Mian title----------
@@ -269,4 +273,22 @@ body {
     to {opacity: 0;}
 }
 
+// @keyframes slideshow {
+//     0% {
+//         background-image: url('/images/background_images/sugar_jar.jpg');
+//     }
+//     25% {
+//         background-image: url('/images/background_images/sugar_strawberry.jpg');
+//     }
+//     50% {
+//         background-image: url('/images/background_images/sugar_whitejar.jpg');
+//     }
+//     75% {
+//         background-image: url('/images/background_images/sugar_pile.jpg');
+//     }
+//     100% {
+//         background-image: url('/images/background_images/sugar_brown.jpg');
+//     }
+    
+// }
 

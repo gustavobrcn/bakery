@@ -4,7 +4,7 @@ class Cookies
     attr_reader :price
     def initialize(name, description, image)
         @name = name
-        @price = '$10,000'
+        @price = '$1,000'
         @description = nil
         @image = nil
         self.show_image(image)
@@ -46,7 +46,7 @@ class Muffins
     attr_reader :price
     def initialize(name, description, image)
         @name = name
-        @price = '$20,000'
+        @price = '$1,500'
         @description = nil
         @image = nil
         self.show_image(image)
@@ -88,7 +88,7 @@ class Cakes
     attr_reader :price
     def initialize(name, description, image)
         @name = name
-        @price = '$500,000'
+        @price = '$50,000'
         @description = nil
         @image = nil
         self.show_image(image)

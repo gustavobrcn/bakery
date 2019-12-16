@@ -1,11 +1,12 @@
 body {
-  background-image: url("/images/background_images/sugar_pile.jpg");
+  background-image: url("/images/background_images/sugar_brown.jpg");
   background-color: black;
   background-size: cover;
   margin: 0;
   background-repeat: no-repeat center center fixed;
   color: #D5A848;
   background-attachment: fixed;
+  backface-visibility: hidden;
 }
 
 #title {
