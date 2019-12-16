@@ -2,7 +2,11 @@ require 'sinatra'
 require 'httparty'
 require './pastries'
 require './bakery-data'
+set :port, 5500
 
+get '/login' do
+    erb :login #:layout => :login
+end
 
 get '/' do  
     @cookie1 = Cookies.new("Heavenly Oatmeal", 1, 1)
