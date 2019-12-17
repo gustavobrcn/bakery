@@ -1,8 +1,20 @@
+<div class='search_results'>
+  <h1>Search Results for '<%= @search %>'</h1>
+</div>
+
 <div class='recipes'>
   <% @recipes.each do |recipe|%>
-    <div class='recipes__display'>
-      <img src="<%= recipe['image']%>">
-      <h1> <%= recipe['label']%></h1>
+    <div class='recipes__hover'>
+      <div class='recipes__display'>
+        <img src="<%= recipe['image']%>">
+        <h3> <%= recipe['label']%></h3>
+      </div>
     </div>
   <% end %>
 </div>
+        
+        <%# <% recipe['ingredientLines'].each do |ingredient|%>
+          <%# <% next if ingredient.include?('//')%> 
+          <%# <div class='recipes__ingredients'> %>
+          <%# <p> <%= ingredient %> 
+        <%# </div> %>

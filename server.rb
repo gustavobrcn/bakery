@@ -41,6 +41,7 @@ end
 post '/search' do
 
     puts params
+    @search = params['search']
     # req = HTTParty.get("#{@@url}"+"#{params:search}&"+"app_id=#{ENV['API_ID']}"+"&app_key=#{API_KEY}")
     @req = HTTParty.get(@@url, {query: {
             q: params['search'],
