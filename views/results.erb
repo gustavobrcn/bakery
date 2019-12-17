@@ -2,19 +2,33 @@
   <h1>Search Results for '<%= @search %>'</h1>
 </div>
 
+<div class='results-form-background'>
+     <form class='search' action='/search' method='POST'>
+            <input class='search__field' type='text' name='search' placeholder='Search for a Heavenly Treat'>
+            <input class='search__btn' type='submit' value='Find Treat'>
+        </form>
+</div>
+
 <div class='recipes'>
   <% @recipes.each do |recipe|%>
     <div class='recipes__hover'>
       <div class='recipes__display'>
         <img src="<%= recipe['image']%>">
-        <h3> <%= recipe['label']%></h3>
+        <h2> <%= recipe['label']%></h2>
       </div>
     </div>
   <% end %>
 </div>
         
-        <%# <% recipe['ingredientLines'].each do |ingredient|%>
-          <%# <% next if ingredient.include?('//')%> 
-          <%# <div class='recipes__ingredients'> %>
-          <%# <p> <%= ingredient %> 
-        <%# </div> %>
+         <%# <% def get_price(pastry_type) %>
+              <%# <% case recipe['label'].include(pastry_type) %>
+              <%# <% when 'Cake' %> 
+                <%# <%=< h3>$10,000</h3>%> 
+          <%# <% end %>
+          <%# <% get_price(recipe['label']) %> 
+
+         <%# <% recipe['ingredientLines'].each do |ingredient|%>
+           <%# <% next if ingredient.include?('//')%> 
+           <%# <div class='recipes__ingredients'> %>
+           <%# <p> <%= ingredient %> 
+         <%# </div> %>
