@@ -88,7 +88,7 @@ class Cakes
     attr_reader :price
     def initialize(name, description, image)
         @name = name
-        @price = '$50,000'
+        @price = '$10,000'
         @description = nil
         @image = nil
         self.show_image(image)

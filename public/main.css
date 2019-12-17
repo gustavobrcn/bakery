@@ -17,16 +17,17 @@ body {
   display: none;
   animation: appear 2s forwards, disappear 2s forwards;
   animation-delay: 0s, 3s;
+  top: 150px;
 }
 #title h1 {
-  font-size: 120pt;
+  font-size: 54pt;
 }
 #title h3 {
   font-size: 34pt;
   margin: 0;
   position: absolute;
-  top: 310px;
-  left: 320px;
+  top: 180px;
+  left: 260px;
   text-align: center;
 }
 
@@ -37,13 +38,15 @@ body {
   font-family: miama;
   position: relative;
   text-align: center;
-  top: -20px;
+  top: -15px;
   display: none;
   animation: appear 2s forwards;
+  text-decoration: underline;
 }
 #small-title h1 {
   margin: 0;
   font-size: 26pt;
+  text-decoration: underline;
 }
 #small-title h3 {
   text-shadow: 1.5px 1.5px 1.5px black;
@@ -212,6 +215,40 @@ body {
 }
 #pastries--cakes .pastries__malted :hover {
   border: 0px;
+}
+
+.form-background {
+  height: 50px;
+  backdrop-filter: blur(10px) brightness(1);
+  position: relative;
+  top: 264px;
+  text-align: center;
+  padding: 50px;
+}
+.form-background .search {
+  font-family: BonvenoCF;
+}
+.form-background .search .search__field {
+  background-color: whitesmoke;
+  margin: 10px 0px;
+  border-radius: 15px;
+  height: 20px;
+  width: 500px;
+  border: 5px solid whitesmoke;
+  font-size: 12pt;
+  text-align: center;
+  color: #D5A848;
+}
+.form-background .search .search__btn {
+  background-color: #D5A848;
+  margin: 10px 0px;
+  border-radius: 15px;
+  height: 25px;
+  width: 150px;
+  border: 5px solid #D5A848;
+  font-size: 10pt;
+  text-align: center;
+  color: whitesmoke;
 }
 
 /* ------------Animations------------ */

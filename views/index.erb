@@ -1,14 +1,16 @@
-<div class='background'>
+<%# <div class='background'> %>
+
 <div id='title'>
-    <h1>Syntactic Sugar</h1> 
-    <h3>"The Heavenly Bakery"</h3>
+    <h1><%=@user %>, Welcome to Syntactic Sugar</h1> 
+    <h3>-"The Heavenly Bakery"</h3>
 </div>
 
+
 <div id='small-title'>
-    <h1>Syntactic Sugar</h1> 
-    <h3>"The Heavenly Bakery"</h3>
+    <h1><%=@user %>'s Heaven</h1> 
+    <%# <h3>"The Heavenly Bakery"</h3> %>
 </div>
-        
+
 <h1 class='pastry-category'>Heavenly Cookies</h1>
 <div class='pastries' id='pastries--cookies'>
     <div class='pastries__hover'>
@@ -117,4 +119,6 @@
         </div>
     </div>
 </div>
-</div>
+<%# </div> %>
+
+<a href="/search">Search Our Heaven Recipes</a>

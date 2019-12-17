@@ -47,4 +47,8 @@ setTimeout(titleDisappear, 6000)
 setTimeout(smallTitleAppear, 6000)
 setTimeout(pastriesAppear, 6500)
 setTimeout(categoriesAppear, 6500)
-setInterval(changeBackground, 10000)
+// setInterval(changeBackground, 10000)
+
+// ----------Random Background----------
+
+document.body.style.backgroundImage = "url(" + bgImages[Math.floor(Math.random() * bgImages.length)]+ ")"

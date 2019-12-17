@@ -1,0 +1,8 @@
+<div class='recipes'>
+  <% @recipes.each do |recipe|%>
+    <div class='recipes__display'>
+      <img src="<%= recipe['image']%>">
+      <h1> <%= recipe['label']%></h1>
+    </div>
+  <% end %>
+</div>
