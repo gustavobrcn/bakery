@@ -6,7 +6,7 @@ set :port, 5500
 
 # ----------Login Page----------
 get '/login' do
-    erb :login, :layout => :alt
+    erb :login, :layout => :alt_layout
 end
 
 # ----------Login Redirect----------

@@ -20,19 +20,20 @@ body {
     position: relative;
     text-align: center;
     display: none;
-    animation: appear 2s forwards, disappear 2s forwards;
-    animation-delay: 0s, 3s;
+    animation: appear 2s forwards, disappear 2s forwards; //slide 8s ease-in-out;
+    animation-delay: 0s, 3s, 0s;
     top: 150px;
     h1 {
-        font-size: 54pt;
+        font-size: 52pt;
     }
     h3 {
-        font-size: 34pt;
+        font-size: 28pt;
         margin: 0;
         position: absolute;
-        top: 180px;
-        left: 260px;
+        top: 150px;
+        left: 250px;
         text-align: center;
+        animation: slide 8s ease-in-out;
     }
 }
 
@@ -49,6 +50,7 @@ body {
     top: -15px;
     display: none;
     animation: appear 2s forwards;
+    height: 100px;
     h1 {
         margin: 0;
         font-size: 26pt;
@@ -76,7 +78,7 @@ body {
 // ----------Heading for each section----------
 .pastry-category {
     text-shadow: 3px 3px 3px black;
-    margin: 65px 0px -10px 0px;
+    margin: 100px 0px -10px 0px;
     font-family: miama;
     font-size: 30pt;
     text-align: center;
@@ -414,6 +416,16 @@ body {
 @keyframes disappear {
     from {opacity: 1;}
     to {opacity: 0;}
+}
+
+@keyframes slide {
+    // 0% {left: 0;};
+    // 25% {left: 5px;}
+    // 50% {left: 10px}
+    // 75% {left: 15px}
+    // 100% {left: 20px}
+    from {left: 250px}
+    to {left: 295px}
 }
 
 // @keyframes slideshow {

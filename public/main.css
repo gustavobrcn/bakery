@@ -16,19 +16,20 @@ body {
   text-align: center;
   display: none;
   animation: appear 2s forwards, disappear 2s forwards;
-  animation-delay: 0s, 3s;
+  animation-delay: 0s, 3s, 0s;
   top: 150px;
 }
 #title h1 {
-  font-size: 54pt;
+  font-size: 52pt;
 }
 #title h3 {
-  font-size: 34pt;
+  font-size: 28pt;
   margin: 0;
   position: absolute;
-  top: 180px;
-  left: 260px;
+  top: 150px;
+  left: 250px;
   text-align: center;
+  animation: slide 8s ease-in-out;
 }
 
 #small-title {
@@ -41,6 +42,7 @@ body {
   top: -15px;
   display: none;
   animation: appear 2s forwards;
+  height: 100px;
 }
 #small-title h1 {
   margin: 0;
@@ -67,7 +69,7 @@ body {
 
 .pastry-category {
   text-shadow: 3px 3px 3px black;
-  margin: 65px 0px -10px 0px;
+  margin: 100px 0px -10px 0px;
   font-family: miama;
   font-size: 30pt;
   text-align: center;
@@ -361,6 +363,14 @@ body {
   }
   to {
     opacity: 0;
+  }
+}
+@keyframes slide {
+  from {
+    left: 250px;
+  }
+  to {
+    left: 295px;
   }
 }
 
